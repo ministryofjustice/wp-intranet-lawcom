@@ -54,7 +54,7 @@ class ExportSite
 		  $stop = stripos($data, $end);
 		  $data = substr($data, 0, $stop);
 		  $data = preg_replace_callback(
-		  	"#(<\s*a\s+[^>]*href\s*=\s*[\"'])(?!http|mailto|javascript)([^\"'>]+)([\"'>]+)#",
+		  	"#(<\s*a\s+[^>]*href\s*=\s*[\"'])(?!http|mailto|javascript|\#)([^\"'>]+)([\"'>]+)#",
 		  	function($matches) {
 		  		$matches[2] = str_replace(".htm", "", $matches[2]);
 		  		$matches[2] = str_replace("docs/", "wp-content/uploads/", $matches[2]);
