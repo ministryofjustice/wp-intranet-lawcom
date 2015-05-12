@@ -10,7 +10,7 @@ class ExportSite
 	{
 		$files = $this->getHtmlFiles();
 		foreach ($files as $file) {
-			$scrape[] = $this->scrapePage('http://export-intranet-lawcom.dev/dump/' . $file);
+			$scrape[] = $this->scrapePage('http://intranet-lawcom.dev/export/dump/' . $file);
 		}
 		$file = fopen("export.json", "w");
 		fwrite($file, json_encode($scrape));
@@ -74,7 +74,7 @@ class ExportSite
 		  $data = substr($data, strlen($start));
 		  $data = preg_replace( "/\r|\n/", "", $data );
 		  $data = trim($data);
-		  $date = DateTime::createFromFormat('j-M-Y', '15-Feb-2009');
+		  $date = DateTime::createFromFormat('j M Y', $data);
 			return $date->format('Y-m-d');
 		});
 		$page['last_updated'] = $last_updated[0];
