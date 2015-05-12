@@ -53,3 +53,6 @@ function remove_dashboard_meta() {
   //remove_meta_box( 'dashboard_activity', 'dashboard', 'normal');
 }
 add_action( 'admin_init', __NAMESPACE__ . '\\remove_dashboard_meta' );
+
+remove_filter( 'the_content', 'wpautop' );
+remove_filter( 'the_excerpt', 'wpautop' );
