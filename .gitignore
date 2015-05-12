@@ -106,3 +106,4 @@ node_modules/
 export/vendor
 export/dump
 export/temp
+export/export.json
