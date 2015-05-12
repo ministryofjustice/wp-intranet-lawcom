@@ -2,7 +2,7 @@
 <!-- googleoff: index -->
 <!-- top image bar -->
 <div id="imgbar">
-<a href="//"><img src="/wp-content/uploads/intranet-logoleft.gif" width="270" height="100" border="0" title="Law Commission Intranet" /></a><a href="//"><img src="/wp-content/uploads/intranet-logoright.gif" alt="Law Commission Intranet" width="500" height="100" border="0" /></a></div>
+<a href="/"><img src="/wp-content/uploads/intranet-logoleft.gif" width="270" height="100" border="0" title="Law Commission Intranet" /></a><a href="/"><img src="/wp-content/uploads/intranet-logoright.gif" alt="Law Commission Intranet" width="500" height="100" border="0" /></a></div>
 <!-- Top horizontal navigation area -->
 <div id="shadow">
 <div id="hnav">
