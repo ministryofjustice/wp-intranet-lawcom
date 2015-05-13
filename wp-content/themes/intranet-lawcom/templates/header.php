@@ -10,8 +10,8 @@
  <li id="who"><a tabindex="12" accesskey="p" title="Who's Who" href="/whoswho">Who's Who</a></li>
  <li id="goodidea"><a tabindex="13" accesskey="g" title="Good Ideas" href="/ideas">Good Ideas</a></li>
  <li id="elis"><a tabindex="14" accesskey="e" title="eLis" href="/elis">eLis</a></li>
- <li id="lsite"><a tabindex="15" accesskey="w" title="LawCom Website" href="http://www.lawcom.gov.uk target="_new">LawCom Website</a></li>
- <li id="dcainfo"><a tabindex="16" accesskey="d" title="Ministry of Justice intranet" href=http://intranet.justice.gsi.gov.uk/ target="_new">MOJ Intranet</a></li>
+ <li id="lsite"><a tabindex="15" accesskey="w" title="LawCom Website" href="http://www.lawcom.gov.uk" target="_new">LawCom Website</a></li>
+ <li id="dcainfo"><a tabindex="16" accesskey="d" title="Ministry of Justice intranet" href="http://intranet.justice.gsi.gov.uk/" target="_new">MOJ Intranet</a></li>
  <li id="links"><a tabindex="17" accesskey="l" title="Links" href="/links">Links</a></li>
  <li id="sitemap"><a tabindex="18" accesskey="m" title="Site Map" href="/sitemap">Site Map</a></li></ul>
 </div>
@@ -67,9 +67,7 @@ document.write(dayname + "&nbsp;" + dateno + "&nbsp;" + monthname);
 <!-- search box -->
 <div id="content">
 <div class="rightdiv">
-     <form name="search" action="/searchLawcom.do">
-       <p>search: <input tabindex="19" accesskey="s" type="text" name="query" size="12" /><input id="go" type="submit" value="go" class="searchBut" name="submit" /></p>
-     </form>
+     <?php get_search_form(); ?>
 </div>
 <!-- googleon: index -->
 <br />
