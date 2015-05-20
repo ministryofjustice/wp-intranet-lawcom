@@ -63,7 +63,7 @@ height: 1px}
   height: 30px;
   background:  url(/wp-content/uploads/infoshadow-right.gif) bottom right no-repeat;
   z-index:1}
-#hnav 
+.menu-top-navigation-container 
 { position: absolute;
   width: 770px;
   height: 25px;
@@ -72,27 +72,27 @@ height: 1px}
   text-align: right;
   border-bottom: 1px solid #5AA69C;
   background-color: #fff}
-ul#hnav2 
+ul#menu-top-navigation
 { list-style: none;
   margin: 6px 0px 1px 3px;
   padding: 0px 0px 0px 0px}
-ul#hnav2 li 
+ul#menu-top-navigation li 
 { border-left: 1px solid #5AA69C;
   border-right: 0px; 
   display: inline; 
   padding: 0px}
-ul#hnav2 li.x 
+ul#menu-top-navigation li.x 
 { border-left: 1px solid #5AA69C;
   border-right: 1px solid #5AA69C; 
   padding: 0px}
-ul#hnav2 li a
+ul#menu-top-navigation li a
 { margin: 0px;
   padding: 6px;
   background-color: #fff;
   text-decoration: none;
   text-align: right;
   color: #505252}
-ul#hnav2 li a:hover {
+ul#menu-top-navigation li a:hover {
   color: #333;
   background-color: #eaeaea}
 /* reddot hnav trickery begins */
@@ -148,14 +148,14 @@ padding: 0px;
 margin: 0;
 border-right: 1px dotted #525252;
 font-size: 100%}
-ul#leftnav2
+ul#menu-side-navigation
 { margin: 0;
 padding-top: 0px;
 padding-left:0px;}
-ul#leftnav2 li
+ul#menu-side-navigation li
 { border-bottom: 1px dotted #525252;
 padding: 0px 0px}
-ul#leftnav2 li a
+ul#menu-side-navigation li a
 { display: block;
 margin:0;
 padding: 6px 3px 6px 5px;
@@ -163,7 +163,7 @@ background-color: #eaeaea;
 text-decoration: none;
 text-align: left;
 color: #505252;}
-ul#leftnav2 li a:hover
+ul#menu-side-navigation li a:hover
 { background-color: #cdcdcd;
   color: #333}
   

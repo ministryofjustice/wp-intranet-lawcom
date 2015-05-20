@@ -5,16 +5,9 @@
 <a href="/"><img src="/wp-content/uploads/intranet-logoleft.gif" width="270" height="100" border="0" title="Law Commission Intranet" /></a><a href="/"><img src="/wp-content/uploads/intranet-logoright.gif" alt="Law Commission Intranet" width="500" height="100" border="0" /></a></div>
 <!-- Top horizontal navigation area -->
 <div id="shadow">
-<div id="hnav">
- <ul id="hnav2">
- <li id="who"><a tabindex="12" accesskey="p" title="Who's Who" href="/whoswho">Who's Who</a></li>
- <li id="goodidea"><a tabindex="13" accesskey="g" title="Good Ideas" href="/ideas">Good Ideas</a></li>
- <li id="elis"><a tabindex="14" accesskey="e" title="eLis" href="/elis">eLis</a></li>
- <li id="lsite"><a tabindex="15" accesskey="w" title="LawCom Website" href="http://www.lawcom.gov.uk" target="_new">LawCom Website</a></li>
- <li id="dcainfo"><a tabindex="16" accesskey="d" title="Ministry of Justice intranet" href="http://intranet.justice.gsi.gov.uk/" target="_new">MOJ Intranet</a></li>
- <li id="links"><a tabindex="17" accesskey="l" title="Links" href="/links">Links</a></li>
- <li id="sitemap"><a tabindex="18" accesskey="m" title="Site Map" href="/sitemap">Site Map</a></li></ul>
-</div>
+
+ <?php wp_nav_menu( array('menu' => 'Top navigation' )); ?> 
+
 <!-- date puller -->
 <div id="date">
   <script language="javascript" type="text/javascript">
@@ -49,6 +42,10 @@ document.write(dayname + "&nbsp;" + dateno + "&nbsp;" + monthname);
 </div>
 <!-- Left hand vertical navigation-->
 <div id="leftnav">
+ <?php wp_nav_menu( array('menu' => 'Side navigation' )); ?> 
+ </div>
+
+<!-- <div id="leftnav">
  <ul id="leftnav2">
   <li id="home-nav"><a tabindex="1" accesskey="1" title="Intranet Home" href="/index">Intranet Home</a></li>
   <li id="library-nav"><a tabindex="2" accesskey="2" title="Library" href="/library">Library</a></li>
@@ -62,7 +59,7 @@ document.write(dayname + "&nbsp;" + dateno + "&nbsp;" + monthname);
   <li id="gowrong-nav"><a tabindex="10" accesskey="8" title="Common problems - How to find help" href="/gowrong">Common Problems - How to Find Help</a></li>
   <li id="health-nav"><a tabindex="11" accesskey="9" title="Health and safety" href="/health_and_safety">Health and Safety</a></li>  
  </ul>
-</div>
+</div> -->
 <!-- main body content-->
 <!-- search box -->
 <div id="content">
