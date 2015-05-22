@@ -24,6 +24,6 @@ function setup() {
   add_theme_support('html5', array('caption', 'comment-form', 'comment-list'));
 
   // Tell the TinyMCE editor to use a custom stylesheet
-  //add_editor_style(trailingslashit(get_template_directory_uri()) . "global2.css");
+  add_editor_style();
 }
 add_action('after_setup_theme', __NAMESPACE__ . '\\setup');
