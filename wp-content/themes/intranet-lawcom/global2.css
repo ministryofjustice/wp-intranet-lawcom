@@ -163,7 +163,7 @@ background-color: #eaeaea;
 text-decoration: none;
 text-align: left;
 color: #505252;}
-ul#menu-side-navigation li a:hover, ul#menu-side-navigation li.current-menu-item a:hover
+ul#menu-side-navigation li a:hover, ul#menu-side-navigation li.current-menu-item a
 { background-color: #cdcdcd;
   color: #333}
   
