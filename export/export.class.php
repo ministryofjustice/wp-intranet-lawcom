@@ -32,7 +32,7 @@ class ExportSite
 		$crawler = $client->request('GET', $url);
 
 		$posts = $crawler->filter('#content > ul > li')->each(function ($node) use (&$posts) {
-			$content = preg_replace("/<strong>(.*?)<\/strong><br><br>/", "", $node->html());
+			$content = preg_replace("/<strong>(.*?)<\/strong><br><br>|<strong>(.*?)<\/strong><br>|<strong>(.*?)<\/strong>/", "", $node->html(), 1);
 			$content = preg_replace_callback(
 		  	"#(<\s*a\s+[^>]*href\s*=\s*[\"'])(?!http|mailto|javascript|\#)([^\"'>]+)([\"'>]+)#",
 		  	function($matches) {

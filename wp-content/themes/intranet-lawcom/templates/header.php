@@ -45,7 +45,7 @@ document.write(dayname + "&nbsp;" + dateno + "&nbsp;" + monthname);
  <?php wp_nav_menu( array('menu' => 'Side navigation' )); ?> 
  </div>
 
-<!-- <div id="leftnav">
+<?php /* <!-- <div id="leftnav">
  <ul id="leftnav2">
   <li id="home-nav"><a tabindex="1" accesskey="1" title="Intranet Home" href="/index">Intranet Home</a></li>
   <li id="library-nav"><a tabindex="2" accesskey="2" title="Library" href="/library">Library</a></li>
@@ -59,7 +59,7 @@ document.write(dayname + "&nbsp;" + dateno + "&nbsp;" + monthname);
   <li id="gowrong-nav"><a tabindex="10" accesskey="8" title="Common problems - How to find help" href="/gowrong">Common Problems - How to Find Help</a></li>
   <li id="health-nav"><a tabindex="11" accesskey="9" title="Health and safety" href="/health_and_safety">Health and Safety</a></li>  
  </ul>
-</div> -->
+</div> --> */ ?>
 <!-- main body content-->
 <!-- search box -->
 <div id="content">
