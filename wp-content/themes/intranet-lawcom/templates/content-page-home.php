@@ -9,9 +9,9 @@
 
 	$latest_messages_args = array(
 		'post_type' => 'post',
-		'posts_per_page' => 3,
+		'posts_per_page' => -1,
 		'date_query' => array(
-        'after' => date('Y-m-d', strtotime('-7 days')) 
+        'after' => date('Y-m-d', strtotime('-7 days'))
     )
 	);
 	$latest_messages_query = new WP_Query( $latest_messages_args );
@@ -26,7 +26,7 @@
 							<?php the_title(); ?>
 						</h3>
 
-						<?php the_content(); ?>			
+						<?php the_content(); ?>
 			</div>
 			</li>
 		<?php endwhile; ?>
