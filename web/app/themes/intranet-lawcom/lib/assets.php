@@ -11,20 +11,24 @@ function assets() {
 add_action('wp_enqueue_scripts', __NAMESPACE__ . '\\assets', 100);
 
 function add_head() {
-  echo '<!--[if IE 6]> 
-<style>
-body
-{background: #fff url(docs/infobg-ie.gif) repeat-y}
-</style>
-<![endif]-->
-<link href="/wp-content/themes/intranet-lawcom/print.css" rel="stylesheet" type="text/css" media="print" />
+	?>
+	<!--[if IE 6]> 
+	<style>
+		body {
+			background: #fff url(docs/infobg-ie.gif) repeat-y;
+		}
+	</style>
+	<![endif]-->
 
-<script language="JavaScript">
-<!--
-function openWin(URL) {
-aWindow=window.open(URL, "thewindow", "toolbar=no, width=600, height=500, status=no, scrollbars=yes, resize=no, menubar=no");
-}
-//-->
-</script>' . "\n";
+	<link href="<?= get_template_directory_uri(); ?>/print.css" rel="stylesheet" type="text/css" media="print" />
+
+	<script language="JavaScript">
+		<!--
+		function openWin(URL) {
+		aWindow=window.open(URL, "thewindow", "toolbar=no, width=600, height=500, status=no, scrollbars=yes, resize=no, menubar=no");
+		}
+		//-->
+	</script>
+	<?php
 }
 add_action( 'wp_head', __NAMESPACE__ . '\\add_head' );
