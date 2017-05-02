@@ -8,12 +8,12 @@
     "packages": [
         {
             "name": "acf/advanced-custom-fields-pro",
-            "version": "5.5.11",
+            "version": "5.5.12",
             "dist": {
                 "type": "zip",
-                "url": "https://composer.wp.dsd.io/dist/acf-advanced-custom-fields-pro-5.5.11.zip",
+                "url": "https://composer.wp.dsd.io/dist/acf-advanced-custom-fields-pro-5.5.12.zip",
                 "reference": null,
-                "shasum": "f6892b4e3e88e9bc16b998b7b0f695938ba2fbcb"
+                "shasum": "719c6e5ac44c55fb5dbc0c038de3bace5b79fce3"
             },
             "type": "wordpress-plugin"
         },
@@ -126,20 +126,20 @@
         },
         {
             "name": "johnpbloch/wordpress",
-            "version": "4.7.3",
+            "version": "4.7.4.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/johnpbloch/wordpress.git",
-                "reference": "9f1f8eb6c37d10d73b9d7946c0ab5425a5492a9a"
+                "reference": "ca36dbed576d21681efe92851f411ac2315a0ea5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/johnpbloch/wordpress/zipball/9f1f8eb6c37d10d73b9d7946c0ab5425a5492a9a",
-                "reference": "9f1f8eb6c37d10d73b9d7946c0ab5425a5492a9a",
+                "url": "https://api.github.com/repos/johnpbloch/wordpress/zipball/ca36dbed576d21681efe92851f411ac2315a0ea5",
+                "reference": "ca36dbed576d21681efe92851f411ac2315a0ea5",
                 "shasum": ""
             },
             "require": {
-                "johnpbloch/wordpress-core": "4.7.3",
+                "johnpbloch/wordpress-core": "4.7.4.1",
                 "johnpbloch/wordpress-core-installer": "~0.2",
                 "php": ">=5.3.2"
             },
@@ -161,20 +161,20 @@
                 "cms",
                 "wordpress"
             ],
-            "time": "2017-03-18T04:47:24+00:00"
+            "time": "2017-05-01T23:34:21+00:00"
         },
         {
             "name": "johnpbloch/wordpress-core",
-            "version": "4.7.3",
+            "version": "4.7.4.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/johnpbloch/wordpress-core.git",
-                "reference": "21255f593ac7db93892724321f468c276b15aa65"
+                "reference": "637b1c6e997b28bf8767e6c87611f869e12e246e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/johnpbloch/wordpress-core/zipball/21255f593ac7db93892724321f468c276b15aa65",
-                "reference": "21255f593ac7db93892724321f468c276b15aa65",
+                "url": "https://api.github.com/repos/johnpbloch/wordpress-core/zipball/637b1c6e997b28bf8767e6c87611f869e12e246e",
+                "reference": "637b1c6e997b28bf8767e6c87611f869e12e246e",
                 "shasum": ""
             },
             "require": {
@@ -198,7 +198,7 @@
                 "cms",
                 "wordpress"
             ],
-            "time": "2017-03-06T18:43:41+00:00"
+            "time": "2017-05-01T23:28:59+00:00"
         },
         {
             "name": "johnpbloch/wordpress-core-installer",
@@ -250,10 +250,10 @@
         },
         {
             "name": "koodimonni-language/core-en_gb",
-            "version": "4.7.3",
+            "version": "4.7.4",
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/translation/core/4.7.3/en_GB.zip",
+                "url": "https://downloads.wordpress.org/translation/core/4.7.4/en_GB.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -559,15 +559,15 @@
         },
         {
             "name": "wpackagist-plugin/tinymce-advanced",
-            "version": "4.4.3",
+            "version": "4.5.6",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/tinymce-advanced/",
-                "reference": "tags/4.4.3"
+                "reference": "tags/4.5.6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/tinymce-advanced.4.4.3.zip",
+                "url": "https://downloads.wordpress.org/plugin/tinymce-advanced.4.5.6.zip",
                 "reference": null,
                 "shasum": null
             },
