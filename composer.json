@@ -52,7 +52,8 @@
     "wpackagist-plugin/google-analytics-dashboard-for-wp": "*",
     "acf/advanced-custom-fields-pro": "*",
     "wpackagist-plugin/tinymce-advanced": "*",
-    "roots/soil": "^3.7"
+    "roots/soil": "^3.7",
+    "wpackagist-plugin/classic-editor": "*"
   },
   "require-dev": {
     "squizlabs/php_codesniffer": "^2.5.1"
