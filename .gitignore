@@ -1,3 +1,8 @@
+# PhpStorm
+.idea
+.DS_*
+._DS_*
+
 # Application
 web/app/plugins/*
 !web/app/plugins/.gitkeep
