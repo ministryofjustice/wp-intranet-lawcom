@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "0200152b714dc1b09a36d5cd9aebc8f4",
+    "content-hash": "3a3cf98ce3c95468dd7b44f7831fd5dd",
     "packages": [
         {
             "name": "acf/advanced-custom-fields-pro",
@@ -126,20 +126,20 @@
         },
         {
             "name": "johnpbloch/wordpress",
-            "version": "5.2.3",
+            "version": "5.3.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/johnpbloch/wordpress.git",
-                "reference": "e39361341439df042ace80ba9445b3e0acb87215"
+                "reference": "2b710cf99daf1c219948cd6ee4719ccfbd12e109"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/johnpbloch/wordpress/zipball/e39361341439df042ace80ba9445b3e0acb87215",
-                "reference": "e39361341439df042ace80ba9445b3e0acb87215",
+                "url": "https://api.github.com/repos/johnpbloch/wordpress/zipball/2b710cf99daf1c219948cd6ee4719ccfbd12e109",
+                "reference": "2b710cf99daf1c219948cd6ee4719ccfbd12e109",
                 "shasum": ""
             },
             "require": {
-                "johnpbloch/wordpress-core": "5.2.3",
+                "johnpbloch/wordpress-core": "5.3.0",
                 "johnpbloch/wordpress-core-installer": "^1.0",
                 "php": ">=5.6.20"
             },
@@ -161,27 +161,27 @@
                 "cms",
                 "wordpress"
             ],
-            "time": "2019-09-05T01:17:14+00:00"
+            "time": "2019-11-12T20:45:58+00:00"
         },
         {
             "name": "johnpbloch/wordpress-core",
-            "version": "5.2.3",
+            "version": "5.3.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/johnpbloch/wordpress-core.git",
-                "reference": "455a884ce96b042602d1eb04fdf2b8e003be0eef"
+                "reference": "17ddddaf049e82655c6d3831ca787350807b0566"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/johnpbloch/wordpress-core/zipball/455a884ce96b042602d1eb04fdf2b8e003be0eef",
-                "reference": "455a884ce96b042602d1eb04fdf2b8e003be0eef",
+                "url": "https://api.github.com/repos/johnpbloch/wordpress-core/zipball/17ddddaf049e82655c6d3831ca787350807b0566",
+                "reference": "17ddddaf049e82655c6d3831ca787350807b0566",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.6.20"
             },
             "provide": {
-                "wordpress/core-implementation": "5.2.3"
+                "wordpress/core-implementation": "5.3.0"
             },
             "type": "wordpress-core",
             "notification-url": "https://packagist.org/downloads/",
@@ -201,7 +201,7 @@
                 "cms",
                 "wordpress"
             ],
-            "time": "2019-09-05T01:17:09+00:00"
+            "time": "2019-11-12T20:45:53+00:00"
         },
         {
             "name": "johnpbloch/wordpress-core-installer",
@@ -254,10 +254,10 @@
         },
         {
             "name": "koodimonni-language/core-en_gb",
-            "version": "5.2.3",
+            "version": "5.3",
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/translation/core/5.2.3/en_GB.zip",
+                "url": "https://downloads.wordpress.org/translation/core/5.3/en_GB.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -318,22 +318,43 @@
         },
         {
             "name": "ministryofjustice/wp-moj-components",
-            "version": "1.1.4",
+            "version": "3.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/ministryofjustice/wp-moj-components.git",
-                "reference": "692181b888e10c669bcf4a4d8af245abbaf2300c"
+                "reference": "e761d303414e29983c9e0317d94eeb67b6bd03e9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://composer.wp.dsd.io/dist/ministryofjustice/wp-moj-components/ministryofjustice-wp-moj-components-692181b888e10c669bcf4a4d8af245abbaf2300c-zip-70296e.zip",
-                "reference": "692181b888e10c669bcf4a4d8af245abbaf2300c",
-                "shasum": "14740bd0390fe2434f2aff92e54fd1bb7d54fcaa"
+                "url": "https://composer.wp.dsd.io/dist/ministryofjustice/wp-moj-components/ministryofjustice-wp-moj-components-e761d303414e29983c9e0317d94eeb67b6bd03e9-zip-ff939d.zip",
+                "reference": "e761d303414e29983c9e0317d94eeb67b6bd03e9",
+                "shasum": "b1d9c72c1dce889d30a87572b36fc0496e40f13d"
             },
             "require": {
                 "composer/installers": "^1.0"
             },
+            "require-dev": {
+                "10up/wp_mock": "0.4.2",
+                "phpmd/phpmd": "^2.7",
+                "squizlabs/php_codesniffer": "^3.5"
+            },
             "type": "wordpress-muplugin",
+            "autoload": {
+                "psr-4": {
+                    "component\\Introduce\\": "component/Introduce/",
+                    "component\\Security\\": "component/Security/"
+                }
+            },
+            "scripts": {
+                "test": [
+                    "vendor/bin/phpunit",
+                    "vendor/bin/phpcs -p",
+                    "vendor/bin/phpmd component/ text cleancode,codesize,controversial,design,naming,unusedcode"
+                ],
+                "coverage": [
+                    "vendor/bin/phpunit --coverage-html coverage --whitelist component"
+                ]
+            },
             "authors": [
                 {
                     "name": "Damien Wilson",
@@ -342,10 +363,10 @@
             ],
             "description": "A plugin to introduce global functions to a collection of WP sites",
             "support": {
-                "source": "https://github.com/ministryofjustice/wp-moj-components/tree/1.1.4",
+                "source": "https://github.com/ministryofjustice/wp-moj-components/tree/3.0.1",
                 "issues": "https://github.com/ministryofjustice/wp-moj-components/issues"
             },
-            "time": "2019-09-16T15:41:19+00:00"
+            "time": "2019-11-12T23:26:43+00:00"
         },
         {
             "name": "ministryofjustice/wp-rewrite-media-to-s3",
@@ -377,6 +398,45 @@
                 "issues": "https://github.com/ministryofjustice/wp-rewrite-media-to-s3/issues"
             },
             "time": "2017-03-06T17:20:15+00:00"
+        },
+        {
+            "name": "ministryofjustice/wp-user-roles",
+            "version": "0.2.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ministryofjustice/wp-user-roles.git",
+                "reference": "d4c48b705e5cb6fbebff61acb78b98fa7db295ee"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://composer.wp.dsd.io/dist/ministryofjustice/wp-user-roles/ministryofjustice-wp-user-roles-d4c48b705e5cb6fbebff61acb78b98fa7db295ee-zip-49746c.zip",
+                "reference": "d4c48b705e5cb6fbebff61acb78b98fa7db295ee",
+                "shasum": "6c996440801f2a8526c8d7935751236f5d4fecf2"
+            },
+            "require": {
+                "composer/installers": "^1.0"
+            },
+            "type": "wordpress-plugin",
+            "authors": [
+                {
+                    "name": "Ollie Treend",
+                    "email": "ollie.treend@digital.justice.gov.uk"
+                },
+                {
+                    "name": "James Devon",
+                    "email": "james.devon@digital.justice.gov.uk"
+                },
+                {
+                    "name": "Damien Wilson",
+                    "email": "damien.wilson@digital.justice.gov.uk"
+                }
+            ],
+            "description": "A WordPress plugin to create user roles typically required by a MOJDigital WordPress site",
+            "support": {
+                "source": "https://github.com/ministryofjustice/wp-user-roles/tree/0.2.4",
+                "issues": "https://github.com/ministryofjustice/wp-user-roles/issues"
+            },
+            "time": "2019-07-01T17:37:43+00:00"
         },
         {
             "name": "oscarotero/env",
@@ -420,51 +480,6 @@
                 "env"
             ],
             "time": "2019-04-03T18:28:43+00:00"
-        },
-        {
-            "name": "roots/soil",
-            "version": "3.8.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/roots/soil.git",
-                "reference": "7920eb22bb434c1b86ff3d4d7dc318498de0c675"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/roots/soil/zipball/7920eb22bb434c1b86ff3d4d7dc318498de0c675",
-                "reference": "7920eb22bb434c1b86ff3d4d7dc318498de0c675",
-                "shasum": ""
-            },
-            "require": {
-                "composer/installers": "~1.0",
-                "php": ">=5.4.0"
-            },
-            "require-dev": {
-                "squizlabs/php_codesniffer": "^2.5.1"
-            },
-            "type": "wordpress-plugin",
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Scott Walkinshaw",
-                    "email": "scott.walkinshaw@gmail.com",
-                    "homepage": "https://github.com/swalkinshaw"
-                },
-                {
-                    "name": "Ben Word",
-                    "email": "ben@benword.com",
-                    "homepage": "https://github.com/retlehs"
-                }
-            ],
-            "description": "A WordPress plugin which contains a collection of modules to apply theme-agnostic front-end modifications",
-            "homepage": "https://roots.io/plugins/soil/",
-            "keywords": [
-                "wordpress"
-            ],
-            "time": "2019-05-23T21:45:50+00:00"
         },
         {
             "name": "roots/wp-password-bcrypt",
@@ -674,15 +689,15 @@
         },
         {
             "name": "wpackagist-plugin/tinymce-advanced",
-            "version": "5.2.1",
+            "version": "5.3.0",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/tinymce-advanced/",
-                "reference": "tags/5.2.1"
+                "reference": "trunk"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/tinymce-advanced.5.2.1.zip",
+                "url": "https://downloads.wordpress.org/plugin/tinymce-advanced.zip?timestamp=1573608418",
                 "reference": null,
                 "shasum": null
             },

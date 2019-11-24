@@ -1,4 +1,4 @@
-version: '2'
+version: '3'
 services:
   wordpress:
     build: .
@@ -7,7 +7,9 @@ services:
     env_file: .env
     environment:
       WP_ENV: development
-      VIRTUAL_HOST: lawcomintranet.docker
+      VIRTUAL_HOST: ${SERVER_NAME}
+      WP_HOME: http://${SERVER_NAME}
+      WP_SITEURL: http://${SERVER_NAME}/wp
       SMTP_HOST: mailcatcher
       SMTP_PORT: 1025
       DB_NAME: wordpress

@@ -52,8 +52,8 @@
     "wpackagist-plugin/google-analytics-dashboard-for-wp": "*",
     "acf/advanced-custom-fields-pro": "*",
     "wpackagist-plugin/tinymce-advanced": "*",
-    "roots/soil": "^3.7",
     "wpackagist-plugin/classic-editor": "*",
+    "ministryofjustice/wp-user-roles": "*",
     "ministryofjustice/wp-moj-components": "*"
   },
   "require-dev": {
@@ -61,7 +61,7 @@
   },
   "extra": {
     "installer-paths": {
-      "web/app/mu-plugins/{$name}/": ["type:wordpress-muplugin"],
+      "web/app/mu-plugins/{$name}/": ["type:wordpress-muplugin", "ministryofjustice/wp-user-roles"],
       "web/app/plugins/{$name}/": ["type:wordpress-plugin"],
       "web/app/themes/{$name}/": ["type:wordpress-theme"]
     },
